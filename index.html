@@ -4,49 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     <title>Visitors contact</title>
 </head>
 
 <body>
-    <header class="header">
-        <!-- used a nav element sample from refactored marketing site homework -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#github">Github</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+      <nav class="text-right">
+        <ul>
+          <li> <a href="https://github.com/">Github</a></li>
+          <li> <a href="#">Portfolio</a></li>
+          <li> <a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <section>
-        <h1>My New Website</h1>
-        <br />
-        <p>
-            My goal is to become a full stack developer after this bootcamp.
-        </p>
-    </section>
-    <br />
-
-    <section>
-        <h2 class="contact">Contact Me</h2>
+  
+    <main>
+      <h1 class="text-center">Welcome to my New Website</h1>
+      <figure>
+        <img src="./assets/images/image-1.png" alt="Graphic with Coming Soon text">
+        <figcaption class="text-center">THANK YOU FOR VISITING.</figcaption>
+      </figure>
+      <section id="contact">
+        <h2 class="text-center">Contact Me</h2>
         <form>
-            <label for=""
+              <label class="text-right" for="name">Name:</label>
+              <input type="text" id="name" name="user-name">
+              
+              <label class="text-right" for="email">Email:</label>
+              <input type="text" id="email" name="user-email">
+          <div class="text-center">
+            <button type="submit">SEND</button>
+          </div>
         </form>
-    </section>
-
-    <footer>
-        <p>
-            <h4>&copy; 2021 My New Website Productions</h4>
-        </p>
+      </section>
+    </main>
+  
+    <footer class="text-center">
+      © 2021 My New Website Productions 
     </footer>
-</body>
-
-</html>
+      
+  </body>
+  </html>
